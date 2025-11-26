@@ -130,4 +130,6 @@ async def hilfe(interaction: discord.Interaction):
 
 
 # Bot starten
-bot.run(os.environ['DISCORD_TOKEN'])
+import os
+bot.run(os.getenv("DISCORD_TOKEN"))
+
